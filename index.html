@@ -9,9 +9,9 @@
 				height: 100%;
 				background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 			}
-			*{
+			/* *{
 				border: 1px solid black;
-			}
+			} */
 			.flex{
 				display: flex;
 			}
@@ -33,16 +33,36 @@
 				transition:all 1s
 
 			}
-			.daohang {
-				margin-top: 10px;
-				text-align: center;
+			.daohanglan{
+				align-items:center  ;
 				
 			}
-			a{
+			.daohang {
+				width: 100px;
+				margin-top: 10px;
+				text-align: center;
+				background-color: rgba(145, 224, 223, 0.587);
+			}
+			.zhengchang a{
 				font-size:10px;
 				color: rgb(0, 0, 0);
 				text-decoration: none;
 			}
+			.kong a{
+				font-size:10px;
+				color: rgb(0, 0, 0);
+				text-decoration: line-through;
+			}
+			/* .daohang a{
+				font-size:10px;
+				color: rgb(0, 0, 0);
+				text-decoration: none;
+			} */
+			/* a{
+				font-size:10px;
+				color: rgb(0, 0, 0);
+				text-decoration: line-through;
+			} */
 			.toubu{
 				justify-content:center;
 				text-align: center;
@@ -61,13 +81,20 @@
 				border:0;
 				font-size: 14px;
 				outline: none;
-				background-color: rgba(238, 9, 9, 0);
+				/* background-color: rgba(238, 9, 9, 0); */
 				color: rgb(161, 161, 161);
 				margin: 0 10px;
+				opacity: 0.5;
+				filter:alpha(opacity=50);
+				justify-content: center;
+				border-radius: 10px;
 			}
 			.searchimg{
+				justify-content: center;
+				background-color: rgba(142, 171, 193, 0.552);
 				height: 50px;
 				width: 70px;
+				border-radius: 10px;
 			}
 			.qitia{
 				justify-content:space-between;
@@ -80,8 +107,11 @@
 				flex-basis: 100%;
 			}
 			.neirong{
+				background-color: rgba(188, 219, 210, 0.663);
 				padding: 10px;
 				margin: 20px;
+				border-radius: 10px;
+				justify-content: center;
 			}
 			.wrap{
 				flex-wrap: wrap;
@@ -93,6 +123,8 @@
 				margin: 10px;
 				width: 400px;
 				height: 50px;
+				background-color: #a8ede987;
+				border-radius: 10px;
 			}
 			@media(max-width:600px){
 				/* .cebian{
@@ -103,6 +135,7 @@
 					
 				}
 			}
+			
 		</style>
 	</head>
 	<body  class="flex">
@@ -116,34 +149,34 @@
 		 border-bottom:1px solid #999;"
 		 class="flex"
 		 id="dingbu">
-		 <a href="#dingbu"><img class="run" src="16137913564152082.gif" width="40px" height="40px" title="关于本站" alt="关于本站"></a>
+		 <a href="#dingbu"><img class="run" src="img/16137913564152082.gif" width="40px" height="40px" title="关于本站" alt="关于本站"></a>
 		<div style="margin-left:10px;font-size: 20px;" class="fc">刘浩浩 小世界</div>
 		</div>
 		<hr>
 		<!-- 收藏栏 -->
-		<div style="font-size: 10px;"> <img src="wjx.png" width="10px" height="10px"> 收藏本站：——————</div>
+		<div style="font-size: 10px;"> <img src="img/wjx.png" width="10px" height="10px"> 收藏本站：——————</div>
 		<!-- 导航栏 -->
-		<div class="flex1">
+		<div class="flex1 flex daohanglan column">
 			
-			<div class="daohang"><a href="#">导航1</a></div>
-			<div class="daohang"><a href="#">导航2</a></div>
-			<div class="daohang"><a href="#">导航3</a></div>
-			<div class="daohang"><a href="#">导航4</a></div>
+			<div class="zhengchang   daohang"><a href="#">导航1</a></div>
+			<div class="zhengchang   daohang"><a href="#">导航2</a></div>
+			<div class=" zhengchang  daohang"><a href="#">导航3</a></div>
+			<div class=" zhengchang  daohang"><a href="#">导航4</a></div>
 		</div>
 	  </div>
 		<!-- 主区域 -->
 		<div class=" zhuquyu flex flex1 column">
 			<!-- 头部栏 -->
 			<div class="toubu flex ">
-				<div class="tbdh"><a href="#">站长微信</a></div>
-				<div class="tbdh"><a href="#">评论留言</a></div>
-				<div class="tbdh"><a href="#">关于本站</a></div>
+				<div class="zhengchang tbdh"><a terget="_blank" href="img/wx.jpg">站长微信</a></div>
+				<div class="kong tbdh"><a href="#">评论留言</a></div>
+				<div class="kong tbdh"><a href="#">关于本站</a></div>
 			</div>
 			<!-- 搜索栏 -->
 			<div class="flex sousuo">
 				<form class="flex " target="_blank" method="get" action="https://www.baidu.com/s">
 					<input type="text" placeholder="请输入关键词" name="word" class="search">
-					<input type="image" src="sousuo.png" name="搜索" class="searchimg">
+					<input type="image" src="img/sousuo.png" name="搜索" class="searchimg">
 				</form>
 			</div>
 			<!-- 介绍栏 -->
