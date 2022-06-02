@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网站</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				height: 100vh;
+				background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+			}
+			*{
+				border: 1px solid black;
+			}
+			.flex{
+				display: flex;
+			}
+			.flex1{
+				flex: 1;
+			}
+			.column{
+				flex-direction:column;
+			}
+			.zhuquyu{
+				margin:10px;
+			}
+			.fc{
+				word-break: keep-all; 
+				text-align: center;
+			}
+			.run:hover{
+				transform: scale(1.5) rotate(360deg);
+				transition:all 1s
+
+			}
+			.daohang {
+				margin-top: 10px;
+				text-align: center;
+				
+			}
+			a{
+				font-size:10px;
+				color: rgb(0, 0, 0);
+				text-decoration: none;
+			}
+			.toubu{
+				justify-content:center;
+				text-align: center;
+				line-height: 30px;
+			}
+			.tbdh{
+				height: 30px;
+				width: 70px;
+				margin:10px;
+				border-radius: 10px;
+				background-color:rgb(255, 255, 255)
+			}
+			.search{
+				width: 270px;
+				height:50px;
+				border:0;
+				font-size: 14px;
+				outline: none;
+				background-color: rgba(238, 9, 9, 0);
+				color: rgb(161, 161, 161);
+				margin: 0 10px;
+			}
+			.searchimg{
+				height: 50px;
+				width: 70px;
+			}
+			.qitia{
+				justify-content:space-between;
+			}
+			.sousuo{
+				justify-content: center;
+				
+			}
+			.kaitou{
+				flex-basis: 100%;
+			}
+			.neirong{
+				padding: 10px;
+			}
+			.wrap{
+				flex-wrap: wrap;
+			}
+			/* .basis{
+				flex-basis:33.3%
+			} */
+			.nei1{
+				margin: 10px;
+				width: 400px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body  class="flex">
+		<!-- 侧边栏 -->
+	  <div style="width: 200px; z-index:2; background-color:rgb(255, 251, 251); " class="flex column ">
+		<!-- 头像栏 -->
+		<div style="
+		 padding:10px;
+		 align-items:center;
+		 justify-content:center;
+		 border-bottom:1px solid #999;"
+		 class="flex"
+		 id="dingbu">
+		 <a href="#dingbu"><img class="run" src="img/16137913564152082.gif" width="40px" height="40px" title="关于本站" alt="关于本站"></a>
+		<div style="margin-left:10px;font-size: 20px;" class="fc">刘浩浩 小世界</div>
+		</div>
+		<hr>
+		<!-- 收藏栏 -->
+		<div style="font-size: 10px;"> <img src="img/wjx.png" width="10px" height="10px"> 收藏本站：——————</div>
+		<!-- 导航栏 -->
+		<div class="flex1">
+			
+			<div class="daohang"><a href="#">导航1</a></div>
+			<div class="daohang"><a href="#">导航2</a></div>
+			<div class="daohang"><a href="#">导航3</a></div>
+			<div class="daohang"><a href="#">导航4</a></div>
+		</div>
+	  </div>
+		<!-- 主区域 -->
+		<div class=" zhuquyu flex flex1 column">
+			<!-- 头部栏 -->
+			<div class="toubu flex ">
+				<div class="tbdh"><a href="#">站长微信</a></div>
+				<div class="tbdh"><a href="#">评论留言</a></div>
+				<div class="tbdh"><a href="#">关于本站</a></div>
+			</div>
+			<!-- 搜索栏 -->
+			<div class="flex sousuo">
+				<form class="flex " target="_blank" method="get" action="https://www.baidu.com/s">
+					<input type="text" placeholder="请输入关键词" name="word" class="search">
+					<input type="image" src="img/sousuo.png" name="搜索" class="searchimg">
+				</form>
+			</div>
+			<!-- 介绍栏 -->
+			<div class="flex qitia ">
+				本网站由刘浩龙制作<iframe class="" width="280" scrolling="no" height="25" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3"></iframe>
+			</div>
+			<!-- 内容栏 -->
+			<div class=" neirong flex wrap">
+				<div class="kaitou">网站推荐</div>
+				<div class="basis nei1">1</div>
+				<div class="basis nei1">2</div>
+				<div class="basis nei1">3</div>
+				<div class="basis nei1">4</div>
+				<div class="basis nei1">5</div>
+				<div class="basis nei1">6</div>
+			</div>
+		</div>
+	</body>
+</html>
