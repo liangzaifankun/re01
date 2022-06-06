@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>puzzle</title>
+    <link rel="stylesheet" href="pintu.css" type="text/css">
+    <script type="text/javascript" src="pintu.js"></script>
+</head>
+<body>
+    <!-- 最外面的div，用来包含里面结构 -->
+    <div id="container">
+        <!-- 游戏区，大的div方块 -->
+        <div id="game">
+            <!-- 八个小方块，当点击的时候执行move（）函数，参数是显示的编号，这样就知道点击哪个方块了 -->
+            <div id="d1" onclick="move(1)"><img src="pt2_0.jpg" alt=""></div>
+            <div id="d2" onclick="move(2)"><img src="pt2_1.jpg" alt=""></div>
+            <div id="d3" onclick="move(3)"><img src="pt2_2.jpg" alt=""></div>
+            <div id="d4" onclick="move(4)"><img src="pt2_3.jpg" alt=""></div>
+            <div id="d5" onclick="move(5)"><img src="pt2_4.jpg" alt=""></div>
+            <div id="d6" onclick="move(6)"><img src="pt2_5.jpg" alt=""></div>
+            <div id="d7" onclick="move(7)"><img src="pt2_6.jpg" alt=""></div>
+            <div id="d8" onclick="move(8)"><img src="pt2_7.jpg" alt=""></div>
+        </div>
+        <!-- 游戏控制区 -->
+        <div id="control">
+            <!-- 显示游戏时间区域 -->
+            <p>
+                <rowspan id="timeText">总用时</rowspan>
+                <rowspan id="timer"></rowspan>
+            </p>
+            <!-- 显示控制按钮区域 -->
+            <p>
+                <rowspan id="start" onclick="start()">开始</rowspan>
+                <rowspan id="reset" onclick="reset()">重来</rowspan>
+            </p>
+        </div>
+    </div>
+    <div id="container"><img src="pt2.png" alt=""></div>
+</body>
+</html>
